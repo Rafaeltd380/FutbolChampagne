@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{font-family: "Montserrat";}
+@font-face {
+    font-family: myFirstFont;
+    src: url(fuentes/Oswald/static/Oswald-Medium.ttf);
+        }
+.fuente{
+    font-family: myFirstFont;
+    color: red;
+  }
 
 a.titulo{color: #1bbc9b;}
 a{
