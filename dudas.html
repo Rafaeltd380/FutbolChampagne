@@ -12,8 +12,59 @@
         font-family: "Montserrat";
         font-weight: bold;
         }
+        ol{
+            border: 3px solid black;
+            width: 500px;
+            font-weight: bold;
+            font-size: 20px;
+            padding-right: 30px;
+            text-align:justify;
+            font-family: "Montserrat";
+            position: relative;
+            padding-bottom: 20px;
+            left: 375px;
 
-
+        }
+        ol h2{
+            text-align: center;
+        }
+        .formulario{
+            display: flex;
+        }
+        @media screen and (max-width:1380px) {
+        .formulario{
+            display: flex;
+            flex-direction: column;
+    } 
+}
+@media screen and (max-width:1380px) {
+        ol{
+            border: 3px solid black;
+            width: 500px;
+            font-weight: bold;
+            font-size: 20px;
+            padding-right: 30px;
+            text-align:justify;
+            font-family: "Montserrat";
+            position: relative;
+            padding-bottom: 20px;
+            left: 0px;
+    } 
+}
+@media screen and (max-width:600px) {
+        ol{
+            border: 3px solid black;
+            width: 350px;
+            font-weight: bold;
+            font-size: px;
+            padding-right: 30px;
+            text-align:justify;
+            font-family: "Montserrat";
+            position: relative;
+            padding-bottom: 20px;
+            left: 0px;
+    } 
+}
 
     </style>
 </head>
@@ -44,6 +95,7 @@
         </header>
         <main>
             <h2>Tienes alguna duda, queja, o sugerencia? ¡Rellena el siguiente formulario y te responderemos lo antes posible!</h2>
+            <div class="formulario">
             <form action="" method="post">
                 <label for="tipo">Para que es el formulario:</label>
                 <select name="tipo" id="tipo" required>
@@ -75,11 +127,14 @@
                 <ol>
                     <h2 class="fuente">IMPORTANTE</h2>
                     <li>Se educado con nosotros, igual que nosotros lo seremos contigo.</li>
+                    <br>
                     <li>Las respuestas suelen tardar entre 1 a 2 semanas.</li>
-                    <li>En caso de que no llegue ninguna respuesta, contactanos al correo que aparece en el cabecero de la página.</li>
+                    <br>
+                    <li>En caso de que no llegue ninguna respuesta, contacta con nosotros al correo que aparece en el cabecero de la página.</li>
+                    <br>
                     <li>En caso de devoluciones o problemas con las camisetas recibidas, porfavor marcad la casilla de queja. </li>
-
                 </ol>
+            </div>
         <main>
 </body>
 </html>
