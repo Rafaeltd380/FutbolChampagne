@@ -228,9 +228,7 @@ nav>ul li:hover .submenu{
 .submenu li{
     position: relative;
     float:none;
-    width:100%;
-   
-    
+    width:100%;  
 }
 
 .caja{
