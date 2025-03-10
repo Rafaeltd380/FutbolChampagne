@@ -98,8 +98,7 @@
             <div class="formulario">
             <form action="" method="post">
                 <label for="tipo">Para que es el formulario:</label>
-                <select name="tipo" id="tipo" required>
-                    <option value="default" selected disabled hidden>Seleccione una opción</option>
+                <select name="tipo" id="tipo">
                     <option value="duda">Duda</option>
                     <option value="queja">Queja</option>
                     <option value="sugerencia">Sugerencia</option>
@@ -116,13 +115,13 @@
                 <input type="email" name="correo" id="correo" required size="50">
                 <br><br>
                 <label for="telefono">Numero de contacto:</label>
-                <input type="text" name="telefono" id="telefono" size="20">
+                <input type="text" name="telefono" id="telefono" size="9">
                 <br><br>
                 <label for="texto">Cuentanos:</label>
                 <br>
                 <textarea name="texto" id="texto" rows="10" cols="30" required></textarea>
                 <br><br>
-                <input class="enviar" type="submit" value="Enviar mensaje">
+                <input class="enviar" type="submit" value="Enviar mensaje" id="envio">
             </form>
                 <ol>
                     <h2 class="fuente">IMPORTANTE</h2>
@@ -136,5 +135,18 @@
                 </ol>
             </div>
         <main>
+        <script>
+            
+            let envio= document.getElementById("envio");
+            envio.addEventListener("click",function(event){
+                let telefono= document.getElementById("telefono").value;
+                    if((telefono[0]!=6 && telefono[0]!=7 && telefono[0]!=9) || telefono.length!=9){
+                        alert("El teléfono no empieza por un numero valido o es de tamaño incorrecto")
+                        event.preventDefault();
+                    }
+             ;})
+
+
+        </script>
 </body>
 </html>
