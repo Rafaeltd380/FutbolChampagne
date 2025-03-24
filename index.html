@@ -68,31 +68,31 @@
     </header>
     <main>
         <h1>NOVEDADES</h1>
-        <div class="caja">
-            <div class="textos_camisetas">
-                <img src="imagenes/camisetas/osasuna-removebg-preview.png" alt="Camiseta Osasuna">
+        <div class="caja" id="contenedor1">
+            <div class="textos_camisetas" id="osasuna">
+                <img src="imagenes/camisetas/osasuna-removebg-preview.png"  alt="Camiseta Osasuna">
                 <p>Primera Equipación <br>Osasuna 24/25</p>
             </div>
-            <div class="textos_camisetas">
-                <img src="imagenes/camisetas/arsenal-removebg-preview.png" alt="Camiseta Arsenal">
+            <div class="textos_camisetas" id="arsenal">
+                <img src="imagenes/camisetas/arsenal-removebg-preview.png"  alt="Camiseta Arsenal">
                 <p>Primera Equipación <br>Arsenal 24/25</p>
             </div>
-            <div class="textos_camisetas">
-                <img src="imagenes/camisetas/levante-removebg-preview.png" alt="Camiseta Levante">
+            <div class="textos_camisetas" id="levante" >
+                <img src="imagenes/camisetas/levante-removebg-preview.png"  alt="Camiseta Levante">
                 <p>Segunda Equipación <br>Levante 24/25</p>
             </div>
         </div>
         <h1>TOP VENTAS</h1>
-        <div class="caja">
-            <div class="textos_camisetas">
+        <div class="caja" id="contenedor2">
+            <div class="textos_camisetas" id="sanLorenzo">
                 <img src="imagenes/camisetas/san_lorenzo-removebg-preview.png" alt="Camiseta San Lorenzo">
                 <p>Primera Equipación <br>San Lorenzo 24/25</p>
             </div>
-            <div class="textos_camisetas">
+            <div class="textos_camisetas" id="inter">
                 <img src="imagenes/camisetas/miami-removebg-preview.png" alt="Camiseta Miami">
                 <p>Segunda Equipación <br> Inter Miami 2024</p>
             </div>
-            <div class="textos_camisetas">
+            <div class="textos_camisetas" id="leganes">
                 <img src="imagenes/camisetas/leganes-removebg-preview.png" alt="Camiseta Leganes">
                 <p>Primera Equipación <br> Leganes 17/18</p>
             </div>
@@ -105,5 +105,18 @@
         <a href="https://www.facebook.com/home.php"><img src="imagenes/facebook.png" alt="facebook"></a>
         <p>Copyright &copy; 2025 FutbolChampagne</p>
     </footer>
+    <script>
+        function cambiarCamiseta() {
+            let contenedor1 = document.getElementById("contenedor1");
+            let elementos1 = Array.from(contenedor1.children);
+            contenedor1.insertBefore(elementos1.pop(), elementos1[0]);
+
+            let contenedor2 = document.getElementById("contenedor2");
+            let elementos2 = Array.from(contenedor2.children);
+            contenedor2.insertBefore(elementos2.pop(), elementos2[0]);
+        }
+        setInterval(cambiarCamiseta, 4000);
+
+    </script>
 </body>
 </html>
