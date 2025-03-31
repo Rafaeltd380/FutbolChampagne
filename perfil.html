@@ -69,7 +69,7 @@
         <div class="cabecero-2">
             <a class="titulo" href="index.html">
             <h1 class="titulo">Futbol Champagne</h1>
-            <img src="imagenes/balon-de-futbol.png" alt="" width="120" height="120" >
+            <img src="imagenes/balon-de-futbol.png" alt="balon" width="120" height="120" >
         </a>
         </div>
     </header>
@@ -94,8 +94,10 @@
                 <br>
                 <form action="" method="post">
                     <input class="enviar" type="submit" value="Cerrar Sesion">
+                    <br>
+                    <input type="file" name="perfil" id="perfil" accept="image/*">
                 </form>
-                <button class="boton" onclick="cambiarImagen()">Cambiar imagen</button>
+               
             </div>
         </div>
     </main>
@@ -107,23 +109,18 @@
             <p>Copyright &copy; 2025 FutbolChampagne</p>
         </footer>
     <script>
-        let indice=0;
-        imagen= document.getElementById("fotoPerfil")
-        function cambiarImagen(){
-            if (indice==0){
-                imagen.src="./imagenes/perfil2.png";
-                indice++;
-            }else if(indice==1){
-                imagen.src="./imagenes/perfil3.png";
-                indice++;
-            }else if(indice==2){
-                imagen.src="./imagenes/perfil4.png";
-                indice++;
-            }else if(indice==3){
-                imagen.src="./imagenes/perfil.png";
-                indice=0;
-            }
+        let perfil= document.getElementById("perfil");
+        let foto= document.getElementById("fotoPerfil");
+
+        perfil.addEventListener("change",function(evento){
+            const file= this.files[0];
+        
+        
+        if (file){
+            foto.src=URL.createObjectURL(file);
+
         }
+    });
     </script>
 </body>
 </html>
