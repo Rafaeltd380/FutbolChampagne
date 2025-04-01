@@ -15,6 +15,8 @@ a.titulo{color: #1bbc9b;}
 a{
     text-decoration: none;
 }
+
+/*primer cabecero*/
 div.cabecero-1 {
 
     background-color: #1bbc9b;
@@ -94,6 +96,7 @@ div.cabecero-1 {
     } 
 }
 
+/*segundo cabecero*/
 div.cabecero-2{
     position: relative;
     color: #1bbc9b ;
@@ -138,6 +141,7 @@ h1.titulo{
         font-size: 25px;
     } 
 }
+/*tercer cabecero*/
 div.cabecero-3{
     position: relative;
     background-color: rgb(69,115,106);
@@ -232,7 +236,7 @@ nav>ul li:hover .submenu{
 }
 
 
-
+/*boton de enviar: ej formulario*/
 .enviar{
     width: 200px;
     height: 30px;
