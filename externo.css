@@ -231,37 +231,7 @@ nav>ul li:hover .submenu{
     width:100%;  
 }
 
-.caja{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
 
-}
-.textos_camisetas{
-    position: relative;
-font-size: 25px;
-font-weight: bold;
-border-bottom: 3px solid white;
-border-top: 3px solid white ;
-border-left: 3px solid white ;
-border-right: 3px solid white ;
-}
-footer{
-
-    background-color: black;
-    color: white;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-footer img{
-    position: relative;
-    width: 200px;
-}
 
 .enviar{
     width: 200px;
@@ -276,16 +246,21 @@ footer img{
     background-color: #1bbc9b ;
     }
 
-    .imagen_menu{
-        width:384.7px ;
-        background-color: white;
-    }
-    .textos_camisetas_menu{
-        position: relative;
-    font-size: 25px;
-    font-weight: bold;
-    border-bottom: 3px solid black;
-    border-top: 3px solid black ;
-    border-left: 3px solid black ;
-    border-right: 3px solid black ;
-    }
+
+/*pie de página*/
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer img{
+    position: relative;
+    width: 200px;
+}
+
+    

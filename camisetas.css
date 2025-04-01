@@ -1,5 +1,5 @@
 
-
+/*camisetas ampliadas al hacer clic*/
 .ampliada {
     display: none;
     position: fixed;
@@ -23,4 +23,31 @@
 .ampliada >img{
     width: 550px;
     height: 600px;
+}
+
+/*camisetas de la barra horizontal*/
+.textos_camisetas_menu{
+    position: relative;
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black ;
+    border-left: 3px solid black ;
+    border-right: 3px solid black ;
+    }
+
+.imagen_menu{
+    width:384.7px ;
+    background-color: white;
+}
+
+
+/*lugar donde se almacenan las camisetas*/
+.caja{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
 }
