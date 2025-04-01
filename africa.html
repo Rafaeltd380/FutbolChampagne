@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Futbol Champagne</title>
     <link rel="stylesheet" href="externo.css">
+    <link rel="stylesheet" href="camisetas.css">
     <link rel="shortcut icon" type="image/png" href="imagenes/balon-de-futbol.png">
 
     <style> 
@@ -95,5 +96,25 @@
         <a href="https://www.facebook.com/home.php"><img src="imagenes/facebook.png" alt="facebook"></a>
         <p>Copyright &copy; 2025 FutbolChampagne</p>
     </footer>
+    <div class="ampliada" id="ampliada">
+        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+        <img id="imagenAmpliada" src="" alt="imagenAmpliada">
+    </div>
+
+
+    <script>
+        let ampliada = document.getElementById("ampliada");
+        let imagenAmpliada = document.getElementById("imagenAmpliada");
+        document.querySelectorAll(".imagen_menu").forEach(img => {
+            img.addEventListener("click", function() {
+                imagenAmpliada.src = this.src; 
+                ampliada.style.display = "flex";
+            });
+        });  
+        function cerrarModal() {
+            ampliada.style.display = "none";
+        }
+    </script>
+
 </body>
 </html>
